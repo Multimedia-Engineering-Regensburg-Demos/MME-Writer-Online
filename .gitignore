@@ -1,5 +1,9 @@
 # data
+!data/.gitkeep
 data/*
 
 # node
 node_modules
+
+# ide
+.vscode

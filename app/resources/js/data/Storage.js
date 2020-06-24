@@ -3,8 +3,9 @@
 const API_BASE_URL = "http://localhost:8080/file";
 
 function makeAPICall(route, method) {
+  let url = API_BASE_URL + route;
   return new Promise(function(resolve, reject) {
-    fetch(API_BASE_URL + route, {
+    fetch(url, {
       method: method,
     }).then(function(response) {
       return response.json();

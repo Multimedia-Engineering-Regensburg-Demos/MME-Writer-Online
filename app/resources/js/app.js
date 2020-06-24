@@ -50,7 +50,9 @@ function initEditor() {
 function onTextChanged(event) {
   stats.update(event.data);
   textStorage.save(editor.text).then(function() {
+    /* eslint-disable no-console */
     console.log("Text saved on server");
+    /* eslint-enable no-console */
   });
 }
 

@@ -1,7 +1,9 @@
 {
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": "latest"
     },
+    "extends": "eslint:recommended",
     "rules":
     {
         "block-scoped-var": "error",
@@ -34,7 +36,6 @@
         "no-param-reassign": "error",
         "no-self-compare": "error",
         "no-void": "error",
-        "no-with": "error",
         "one-var": "error",
         "quotes": ["warn", "double"],
         "semi": "error",
@@ -46,6 +47,5 @@
     {
         "es6": true,
         "browser": true
-    },
-    "extends": "eslint:recommended"
+    }
 }
